@@ -18,12 +18,14 @@ body{
     color: #ffff;
     display: flex;
     flex-direction: colum;
-    justify-content: center;
+    justify-content: center; 
+   /* align-items: center;*/
 }
 .text-area{
     display: flex;
     flex-direction: column;
     justify-content: center ;
+    align-items: center;
     background: #0004;
     margin: 2rem;
     padding: 2rem;
@@ -32,8 +34,19 @@ body{
     display:flex;
     flex-direction: colum;
     justify-content: center ;
+    align-items: center;
 }
 .headline{
-    text-align: center ;
     font-size: 2rem;
+    font-weight: 00;
+    padding: 0.5rem;
+}
+.countdown-container div{
+    padding: 0.8rem;
+    text-align: center;
+    font-weight: 0;
+}
+.big-text{
+    font-size: 2rem;
+    font-weight: 600;
 }

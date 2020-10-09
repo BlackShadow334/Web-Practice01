@@ -1,5 +1,6 @@
 # WebPractice
 hey hi, these projects are not originally created by me.
+i just changed it a little bit.
 
 they are either from some videos or from somewhere else.
 i just tried to learn from them as making these projects.

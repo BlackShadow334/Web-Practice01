@@ -1,6 +1,7 @@
 var birthday_year;
 const birthday_month = 11;
 const birthday_day = 11;
+var is_it_today = false;
 
 
 function get_total_remaining_secs(target_month, target_date){
@@ -12,18 +13,21 @@ function get_total_remaining_secs(target_month, target_date){
     
     if(now_month >= target_month && now_date > target_date){
         target_year = ++now_year;
+        is_it_today = false;
     }else{
         target_year = now_year;
+        is_it_today = false
     }
     
     var target = new Date(target_year, target_month, target_date);
     
+    let total_remaining_secs = (target.valueOf() - now.valueOf()) / 1000;
    
     if(now_month == target_month && now_date == target_date){
-        // change heading("until my birthday" to "happy my birthday")
+        // to change heading("until my birthday" to "happy my birthday")
+        is_it_today = true;
+        total_remaining_secs = 0;
     } 
-   
-    let total_remaining_secs = (target.valueOf() - now.valueOf()) / 1000;
    
     return total_remaining_secs;
 }
@@ -45,6 +49,10 @@ const countdown = () => {
     document.querySelector("#hours").innerHTML = remaining_hours ;
     document.querySelector("#minutes").innerHTML = remaining_minutes ;
     document.querySelector("#seconds").innerHTML = remaining_seconds ;
+    
+    if(is_it_today == true){
+        document.querySelector(".headline").innerHTML = "Happy My Birthday";
+    }
 }
 
 countdown();

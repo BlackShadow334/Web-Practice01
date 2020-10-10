@@ -4,6 +4,17 @@ const birthday_day = 11;
 var is_it_today = false;
 
 
+//for randomizing background image
+var bg_images = ["attachments/background01.jpg", "attachments/background02.jpg", "attachments/background03.jpg", "attachments/background04.jpg", "attachments/background05.jpg"];
+
+const randomize_bg = () => {
+    //changing style of body
+    document.body.style = "background: #222 url(" + bg_images[Math.floor(Math.random() * bg_images.length)] + ") no-repeat; background-size: cover; background-attachment: fixed; background-position: 50% 50%;";
+    
+}
+randomize_bg();
+
+
 function get_total_remaining_secs(target_month, target_date){
     var now = new Date();
     var now_year = now.getFullYear();

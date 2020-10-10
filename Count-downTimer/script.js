@@ -19,6 +19,7 @@ function get_total_remaining_secs(target_month, target_date){
         is_it_today = false
     }
     
+    // target is date of event
     var target = new Date(target_year, target_month, target_date);
     
     let total_remaining_secs = (target.valueOf() - now.valueOf()) / 1000;
@@ -35,8 +36,10 @@ function get_total_remaining_secs(target_month, target_date){
 
 const countdown = () => {
     
+    // total_remaining_secs from function get_total_remaining_secs
     let total_remaining_secs = get_total_remaining_secs(birthday_month, birthday_day);
     
+    // calculations for respective 
     let remaining_days = Math.floor(total_remaining_secs / (60 * 60 * 24));
     
     let remaining_hours = Math.floor(total_remaining_secs / (60 * 60) - remaining_days * 24);
@@ -45,15 +48,18 @@ const countdown = () => {
     
     let remaining_seconds = Math.floor(total_remaining_secs - remaining_minutes * 60 - remaining_hours * 60 * 60 - remaining_days * 24 * 60 * 60);
     
+    // changing innerHTML of respective and shows countdown 
     document.querySelector("#days").innerHTML = remaining_days ;
     document.querySelector("#hours").innerHTML = remaining_hours ;
     document.querySelector("#minutes").innerHTML = remaining_minutes ;
     document.querySelector("#seconds").innerHTML = remaining_seconds ;
     
+    // for the day of event
     if(is_it_today == true){
         document.querySelector(".headline").innerHTML = "Happy My Birthday";
     }
 }
 
+// calling function 
 countdown();
 setInterval(countdown, 1000);

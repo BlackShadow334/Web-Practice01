@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 body{
+   
     background: #222 url("attachments/background01.jpg") no-repeat ;
     background-size: cover;
     background-attachment: fixed;
@@ -19,7 +20,7 @@ body{
     display: flex;
     flex-direction: colum;
     justify-content: center; 
-   /* align-items: center;*/
+    align-items: center;
 }
 .text-area{
     display: flex;
@@ -27,18 +28,20 @@ body{
     justify-content: center ;
     align-items: center;
     background: #0004;
-    margin: 2rem;
-    padding: 2rem;
+    margin: 3rem;
+    padding: 4rem 3rem;
 }
 .countdown-container{
     display:flex;
     flex-direction: colum;
+    flex-wrap: wrap;
     justify-content: center ;
     align-items: center;
 }
 .headline{
+    text-align: center ;
     font-size: 2rem;
-    font-weight: 00;
+    font-weight: 300;
     padding: 0.5rem;
 }
 .countdown-container div{

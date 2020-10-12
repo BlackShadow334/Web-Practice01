@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("assets/Roboto-Light.ttf");
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +12,6 @@
 body{
     background: #222;
     color: #ffff;
+    font-family: Roboto-Light, sans-serif ;
+    
 }

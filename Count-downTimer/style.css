@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Roboto-Light";
-    src: url("attachments/Roboto-Light.ttf");
+    src: url("assets/Roboto-Light.ttf");
 }
 
 *{
@@ -10,7 +10,7 @@
 }
 body{
    
-    background: #222 url("attachments/background01.jpg") no-repeat ;
+    background: #222 url("assets/background01.jpg") no-repeat ;
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 50%;

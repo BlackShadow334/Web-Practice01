@@ -5,7 +5,7 @@ var is_it_today = false;
 
 
 //for randomizing background image
-var bg_images = ["attachments/background01.jpg", "attachments/background02.jpg", "attachments/background03.jpg", "attachments/background04.jpg", "attachments/background05.jpg"];
+var bg_images = ["assets/background01.jpg", "assets/background02.jpg", "assets/background03.jpg", "assets/background04.jpg", "assets/background05.jpg"];
 
 const randomize_bg = () => {
     //changing style of body

@@ -44,8 +44,20 @@ li{
     list-style: none;
 }
 button{
+    background: #fff;
+    border: 1px;
     width: calc(75vw /2);
-    font-family: Roboto-Light, sans-serif ;
-    font-size: 1.4rem;
-    
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+button:active{
+    background: #666;
+}
+#skip{
+    border-right: 1px solid black;
+}
+#next{
+    border-left: 1px solid black;
 }

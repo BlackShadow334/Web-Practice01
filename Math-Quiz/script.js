@@ -12,11 +12,12 @@ const loadQuiz = () => {
     
     question.innerHTML = current_quiz_data.question;
     
-    let random_options = RandomizeArray(current_quiz_data.options);
-    a_text.innerHTML = random_options[0];
-    b_text.innerHTML = random_options[1];
-    c_text.innerHTML = random_options[2];
-    d_text.innerHTML = random_options[3];
+    let random_index = RandomizeArray([0,1,2,3]);
+    console.log(rando);
+    a_text.innerHTML = current_quiz_data.option[random_index[0]];
+    b_text.innerHTML = current_quiz_data.option[random_index[1]];
+    c_text.innerHTML = current_quiz_data.option[random_index[2]];
+    d_text.innerHTML = current_quiz_data.option[random_index[3]];
     
     
     

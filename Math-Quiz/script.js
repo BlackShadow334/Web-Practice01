@@ -12,8 +12,11 @@ const loadQuiz = () => {
     
     question.innerHTML = current_quiz_data.question;
     
-    let random_options_index = Math.floor(Math.random() * 5);
-    a_text.innerHTML = current_quiz_data.options[0];
+    let random_options = RandomizeArray(current_quiz_data.options);
+    a_text.innerHTML = random_options[0];
+    b_text.innerHTML = random_options[1];
+    c_text.innerHTML = random_options[2];
+    d_text.innerHTML = random_options[3];
     
     
     

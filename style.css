@@ -3,10 +3,16 @@ body{
     color: #fff ;
 }
 .links li a{
-    color: #fff;
+    color: skyblue;
 }
-a:visited{
+.links li a:visited{
     color: green;
+}
+.links li a:hover{
+    color: #fff ;
+}
+.links li a:active {
+    color: tomato;
 }
 
 #test{

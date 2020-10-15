@@ -5,6 +5,10 @@ body{
 .links li a{
     color: #fff;
 }
+a:visited{
+    color: green;
+}
+
 #test{
     background: red;
 }

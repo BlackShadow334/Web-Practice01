@@ -5,11 +5,13 @@ const c_text = document.querySelector("#c_text");
 const d_text = document.querySelector("#d_text");
 
 
+// quiz_indexes keeps index from 0-quiz_data.length  and than it is randomized and saved as random_quiz_indexes then this randomized indexes used for calling question instead of normal sequence of index, so that question type can also be randamized. 
 const quiz_indexes = [];
 for(let i = 0; i < quiz_data.length; i++){
     quiz_indexes[i] = i;
 }
 const random_quiz_indexes = RandomizeArray(quiz_indexes);
+
 
 
 let current_random_quiz_index = 0;

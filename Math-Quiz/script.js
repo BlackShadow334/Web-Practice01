@@ -4,6 +4,7 @@ const b_text = document.querySelector("#b_text");
 const c_text = document.querySelector("#c_text");
 const d_text = document.querySelector("#d_text");
 
+let total_score = undefined ;
 
 // quiz_indexes keeps index from 0-quiz_data.length  and than it is randomized and saved as random_quiz_indexes then this randomized indexes used for calling question instead of normal sequence of index, so that question type can also be randamized. 
 const quiz_indexes = [];
@@ -15,6 +16,7 @@ const random_quiz_indexes = RandomizeArray(quiz_indexes);
 
 
 let current_random_quiz_index = 0;
+let question_no = 1;
 
 const loadQuiz = () => {
     const current_quiz_data = quiz_data[random_quiz_indexes[current_random_quiz_index]];
@@ -29,6 +31,20 @@ const loadQuiz = () => {
     c_text.innerHTML = current_quiz_data.options[random_index[2]];
     d_text.innerHTML = current_quiz_data.options[random_index[3]];
     
+    document.querySelector("#question-no").innerHTML = question_no + ". ";
+    
+    question_no++;
     current_random_quiz_index ++ ;
 }
+
+
+const nextQuestion = () => {
+    
+    
+    loadQuiz();
+}
+
+
 loadQuiz();
+document.querySelector("#next").addEventListener("click", nextQuestion);
+document.querySelector("#skip").addEventListener("click", nextQuestion);

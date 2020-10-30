@@ -1,0 +1,33 @@
+* {
+    margin:0;padding:0;border-style:border-box;
+}
+body{
+    background:#555;
+}
+#canvas0c{
+    position:fixed;
+    background:#222;
+    transition:1s;
+}
+#nav{
+    position:fixed;
+    bottom:2px;
+    height:1.5em;
+    background:;
+}
+#nav button{
+    position:;
+    padding-left:5px;
+    padding-right:5px;
+    margin-left:5px;
+    margin-top:2px;
+    font-size:1em;
+    background:black;
+    color:#ccc;
+    font-family:Courier;
+    border:0.1px solid #aaa;
+    outline:none;
+}
+#nav button:hover{
+    background:green;
+}

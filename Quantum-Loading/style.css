@@ -1,0 +1,51 @@
+Body{
+    margin:0;padding:0;
+    box-sizing:border-box;
+    color:#eee;
+    background:#222;
+    font-size:1em;
+}
+
+#wheel{
+    position:relative;
+    top:20vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform-style:preserve-3d;
+    perspective-origin:50% 50%;
+    perspective:1000px;
+    transform:rotateX(60deg);
+
+}
+#wheel div{
+    position:absolute;
+    line-height:0em;
+    opacity:0.4;
+    border-radius:50%;
+    text-align:center;
+    transform-origin:50% 50%;
+    animation:ani 6s ease-in-out infinite;
+    
+}
+
+@keyframes ani{
+    0% ,100%{transform:translateY(0em);
+            border:2px solid #f00;
+   
+   
+    }25%{
+        border:2px solid #0f0;
+        
+    }
+    50%{
+        transform:translateY(130vh)
+                  rotateY(0deg);
+        background:#0000ff0a;
+        border:2px solid #fff;
+    }75%{
+        border:2px solid #0ff;
+        
+    }
+    
+}

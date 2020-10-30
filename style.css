@@ -1,7 +1,44 @@
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("/assets/Roboto-Light.ttf");
+}
+
+
 body{
     background: #222 ;
+    font-family: Roboto-Light, sans-serif ;
     color: #fff ;
 }
+
+li{
+    padding-top: 0.5em ;
+    padding-bottom: 0.5em;
+    border-top: 0.1px solid #555;
+    border-bottom: 0.1px solid #555;
+}
+.tag-inprogress{
+    position: absolute ;
+    margin-left: 5px ;
+    padding: 2px 5px ;
+    border: solid 0.5px deepskyblue ;
+    background: #000;
+    font-size: 0.7rem;
+    right: 2em ;
+    width: 12ch;
+    text-align: center;
+}
+.tag-recommended{
+    position: absolute ;
+    margin-left: 5px ;
+    padding: 2px 5px ;
+    border: solid 0.5px lightgreen ;
+    background: #000;
+    font-size: 0.7rem;
+    right: 2em;
+    width: 12ch;
+    text-align: center;
+}
+
 .links li a{
     color: skyblue;
 }
@@ -13,8 +50,4 @@ body{
 }
 .links li a:active {
     color: tomato;
-}
-
-#test{
-    background: red;
 }

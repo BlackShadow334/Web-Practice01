@@ -6,7 +6,7 @@ body{
     color: skyblue;
 }
 .links li a:visited{
-    color: green;
+    color: lightgreen;
 }
 .links li a:hover{
     color: #fff ;

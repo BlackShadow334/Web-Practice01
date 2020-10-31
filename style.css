@@ -9,6 +9,10 @@ body{
     font-family: Roboto-Light, sans-serif ;
     color: #fff ;
 }
+#head_line{
+    margin-left: 1em;
+    color: #bbb;
+}
 
 li{
     padding-top: 0.5em ;

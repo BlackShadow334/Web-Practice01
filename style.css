@@ -5,7 +5,7 @@
 
 
 body{
-    background: #222 ;
+    background: #111 ;
     font-family: Roboto-Light, sans-serif ;
     color: #fff ;
 }
@@ -17,7 +17,7 @@ body{
 li{
     padding-top: 0.5em ;
     padding-bottom: 0.5em;
-    border-top: 0.1px solid #555;
+    border-top: 0.1px solid #444;
     border-bottom: 0.1px solid #555;
 }
 .tag-inprogress{
@@ -25,7 +25,7 @@ li{
     margin-left: 5px ;
     padding: 2px 5px ;
     border: solid 0.5px deepskyblue ;
-    background: #000;
+    background: #222;
     font-size: 0.7rem;
     right: 2em ;
     width: 12ch;

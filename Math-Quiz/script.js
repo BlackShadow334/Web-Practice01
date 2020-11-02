@@ -39,10 +39,17 @@ const loadQuiz = () => {
 
 
 const nextQuestion = () => {
-    
+    if (true) {
+        
+    }
     
     loadQuiz();
 }
+
+const getSelected = () => {
+    
+}
+
 
 
 loadQuiz();

@@ -4,5 +4,5 @@ body{background:;}
 #canvas{
     position:fixed;
     background:#222;
-    
+    touch-action: none;
 }

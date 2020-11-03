@@ -38,17 +38,31 @@ const loadQuiz = () => {
 }
 
 
+
+
+const updateScore = () => {
+    
+    let options = document.querySelectorAll('.option');
+    let choosed_option = undefined;
+    
+    options.forEach(FindChoosedOption);
+    function FindChoosedOption(item, index){
+        console.log('hello');
+        
+    }
+    
+}
+
+
+
 const nextQuestion = () => {
     if (true) {
         
     }
-    
+    updateScore();
     loadQuiz();
 }
 
-const getSelected = () => {
-    
-}
 
 
 

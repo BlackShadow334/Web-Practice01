@@ -3,7 +3,6 @@
  * this method randamizes the index of given array,
  * @param {Array} array any array that has to be randamized.
  */
-const a = ["a", "b", "c", "d", "e"];
 const RandomizeArray = (array) => {
     
     let arr = array;
@@ -19,6 +18,7 @@ const RandomizeArray = (array) => {
     return arr;
 }
 
+//const a = ["a", "b", "c", "d", "e"];
 //document.querySelector("#testing_area").innerHTML = RandomizeArray(a);
 //document.getElementById("test").innerHTML = "tgggh";
 //RandomizeArray(a);

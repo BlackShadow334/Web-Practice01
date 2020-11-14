@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Wave-Motion</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="./style.css">
-        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    
-    </head>
-    <body>
+
+<head>
+    <title>Wave-Motion</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+
+<body>
     <canvas id="canvas"></canvas>
-    
-    <div id = "toolbar">
-    <div id="toolbarBtn"></div>
-    
+
+    <div id="toolbar">
+        <div id="toolbarBtn"></div>
+
         <div class="toolBtn" id="waveBtn">wave</div>
         <div class="toolBtn" id="strokeBtn">stroke</div>
-        
+
         <div id="tool">
-        <div id="wave" ><br>
-wavelength: <span id="wavelengthValue">s</span><br>
-<input type="range" value="100" min="0" max="500" id="wavelengthRange"><br>
+            <div id="wave">
+                <br />
+                wavelength: <span id="wavelengthValue">s</span><br />
+                <input type="range" value="100" min="0" max="500" id="wavelengthRange" /><br />
 
-amplitude: <span id="amplitudeValue"></span><br>
-<input type="range" value="50" min="0" max="500" id="amplitudeRange"><br>
+                amplitude: <span id="amplitudeValue"></span><br />
+                <input type="range" value="50" min="0" max="500" id="amplitudeRange" /><br />
 
-frequency: <span id="frequencyValue">value</span><br>
-<input type="range" value="5" min="-50" max="50" id="frequencyRange"><br>
+                frequency: <span id="frequencyValue">value</span><br />
+                <input type="range" value="5" min="-50" max="50" id="frequencyRange" /><br />
 
-sequence: <span id="sequenceValue">value</span><br>
-<input type="range" value="5" min="0" max="50" id="sequenceRange"><br>
-            
-        </div>
-        <div id="stroke" ><br>
-hue: <span id="hueValue">value</span><br>
-<input type="range" value="100" min="0" max="255" id="hueRange"><br>
+                sequence: <span id="sequenceValue">value</span><br />
+                <input type="range" value="5" min="0" max="50" id="sequenceRange" /><br />
+            </div>
+            <div id="stroke">
+                <br />
+                hue: <span id="hueValue">value</span><br />
+                <input type="range" value="100" min="0" max="255" id="hueRange" /><br />
 
-saturation: <span id="saturationValue">val</span> %<br><input type="range" value="50" min="0" max="100" id="saturationRange"><br>
+                saturation: <span id="saturationValue">val</span> %<br /><input type="range" value="50" min="0"
+                    max="100" id="saturationRange" /><br />
 
-lightness: <span id="lightnessValue">value</span> %<br><input type="range" value="50" min="0" max="100" id="lightnessRange"><br>
+                lightness: <span id="lightnessValue">value</span> %<br /><input type="range" value="50" min="0"
+                    max="100" id="lightnessRange" /><br />
 
-hueChange: <span id="hueChangeValue">value</span><br>
-<input type="range" value="1" min="-10" max="10" id="hueChangeRange"><br>
-            
-        </div>
+                hueChange: <span id="hueChangeValue">value</span><br />
+                <input type="range" value="1" min="-10" max="10" id="hueChangeRange" /><br />
+            </div>
         </div>
     </div>
-    </body>
+</body>
 <script src="./script.js"></script>
+
 </html>

@@ -2,9 +2,9 @@
 // and n adds random no from 0-10 in given index of nums list
 var nums = [];
 const n = (nums_index) => {
-    if (nums[nums_index] == undefined){
-        nums[nums_index] = Math.floor(Math.random()*10);
-    } 
+    if (nums[nums_index] == undefined) {
+        nums[nums_index] = Math.floor(Math.random() * 10);
+    }
     return nums[nums_index];
 }
 //console.log(n(0));
@@ -13,7 +13,7 @@ const n = (nums_index) => {
 
 const quiz_data = [
     {
-        question: n(0) + " + " + n(1) + " * [" + n(2) + " - " + n(3) + "] ", 
+        question: n(0) + " + " + n(1) + " * [" + n(2) + " - " + n(3) + "] ",
         answer: n(0) + n(1) * [n(2) - n(3)],
         options: {
             0: n(0) + n(1) * [n(2) - n(3)],
@@ -28,17 +28,17 @@ const quiz_data = [
         }
     },
     {
-        question: "(" + n(4) + " + " + n(5) + " + " + n(6) + ") ** 2", 
+        question: "(" + n(4) + " + " + n(5) + " + " + n(6) + ") ** 2",
         answer: (n(4) + n(5) + n(6)) ** 2,
         options: {
             0: (n(4) + n(5) + n(6)) ** 2,
             1: (n(1) + n(5) + n(6)),
-            2: (n(4) + n(2) + n(6))*2,
-            3: (n(3) + n(5) + n(6))**3 
+            2: (n(4) + n(2) + n(6)) * 2,
+            3: (n(3) + n(5) + n(6)) ** 3
         }
     },
     {
-        question: "(" + n(7) + " + " + n(8) + ") ** 3 + " + n(9), 
+        question: "(" + n(7) + " + " + n(8) + ") ** 3 + " + n(9),
         answer: (n(7) + n(8)) ** 3 + n(9),
         options: {
             0: (n(7) + n(8)) ** 3 + n(9),
@@ -58,7 +58,7 @@ const quiz_data = [
         }
     },
     {
-        question: "(" + n(14) + " + " + n(15) + " + " + n(16) + ") * " + n(17), 
+        question: "(" + n(14) + " + " + n(15) + " + " + n(16) + ") * " + n(17),
         answer: (n(14) + n(15) + n(16)) * n(17),
         options: {
             0: (n(14) + n(15) + n(16)) * n(17),
@@ -67,6 +67,5 @@ const quiz_data = [
             3: (n(1) + n(5) + n(17)) * n(12)
         }
     },
-    ] 
-    
-    
+]
+

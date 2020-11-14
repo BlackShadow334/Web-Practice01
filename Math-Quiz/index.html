@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Math-Quiz</title>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <script src="./quiz-data.js" defer></script>
+        <script src="../res/utility-methods.js">
+            >
+        </script>
+        <script src="./script.js" defer></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Math-Quiz</title>
-    <link rel = "stylesheet" type = "text/css" href = "./style.css">
-    <script src = "./quiz-data.js" defer>
-    </script>
-    <script src="../res/utility-methods.js">></script>
-    <script src = "./script.js" defer></script>
- 
-</head>
-
-<body>
-    
-    <div class = "quiz-container">
-        <h2><span id ="question-no">1. </span><span id = "question">Question text</span></h2>
-        <ul>
-            <li >
-                <input id = "a" type = "radio" name = "answer" class="option">
-                <label for="a" id="a_text">Option</label>
-            </li>
-            <li >
-                <input id = "b" type = "radio" name = "answer" class="option">
-                <label for="b" id="b_text">Option</label>
-            </li>
-            <li >
-                <input id = "c" type = "radio" name = "answer" class="option">
-                <label for="c" id="c_text">Option</label>
-            </li>
-            <li >
-                <input id = "d" type = "radio" name = "answer" class="option">
-                <label for="d" id="d_text">Option</label>
-            </li>
-        </ul>
-        <div class="btns">
-            <button id="skip">skip</button>
-            <button id="next">next</button>
+    <body>
+        <div class="quiz-container">
+            <h2>
+                <span id="question-no">1. </span
+                ><span id="question">Question text</span>
+            </h2>
+            <ul>
+                <li>
+                    <input id="a" type="radio" name="answer" class="option" />
+                    <label for="a" id="a_text">Option</label>
+                </li>
+                <li>
+                    <input id="b" type="radio" name="answer" class="option" />
+                    <label for="b" id="b_text">Option</label>
+                </li>
+                <li>
+                    <input id="c" type="radio" name="answer" class="option" />
+                    <label for="c" id="c_text">Option</label>
+                </li>
+                <li>
+                    <input id="d" type="radio" name="answer" class="option" />
+                    <label for="d" id="d_text">Option</label>
+                </li>
+            </ul>
+            <div class="btns">
+                <button id="skip">skip</button>
+                <button id="next">next</button>
+            </div>
         </div>
-    </div>
-    
-</body>
-
+    </body>
 </html>

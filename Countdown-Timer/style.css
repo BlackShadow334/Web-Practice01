@@ -3,53 +3,52 @@
     src: url("assets/Roboto-Light.ttf");
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-   
-    background: #222 url("assets/background01.jpg") no-repeat ;
+body {
+    background: #222 url("assets/background01.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 50%;
     min-height: 100vh;
-    font-family: Roboto-Light , sans-serif;
+    font-family: Roboto-Light, sans-serif;
     color: #ffff;
     display: flex;
     flex-direction: colum;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
-.text-area{
+.text-area {
     display: flex;
     flex-direction: column;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
     background: #0004;
     margin: 3rem;
     padding: 4rem 3rem;
 }
-.countdown-container{
-    display:flex;
+.countdown-container {
+    display: flex;
     flex-direction: colum;
     flex-wrap: wrap;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
 }
-.headline{
-    text-align: center ;
+.headline {
+    text-align: center;
     font-size: 2rem;
     font-weight: 300;
     padding: 0.5rem;
 }
-.countdown-container div{
+.countdown-container div {
     padding: 0.8rem;
     text-align: center;
     font-weight: 0;
 }
-.big-text{
+.big-text {
     font-size: 2rem;
     font-weight: 600;
 }

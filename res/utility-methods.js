@@ -4,11 +4,11 @@
  * @param {Array} array any array that has to be randamized.
  */
 const RandomizeArray = (array) => {
-    
+
     let arr = array;
     let i = array.length;
     let j, temp;
-    
+
     while (--i > 0) {
         j = Math.floor(Math.random() * (i + 1));
         temp = arr[i];

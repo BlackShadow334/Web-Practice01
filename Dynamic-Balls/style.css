@@ -1,8 +1,13 @@
-*{margin:0;padding:0;}
-body{background:;}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: ;
+}
 
-#canvas{
-    position:fixed;
-    background:#222;
+#canvas {
+    position: fixed;
+    background: #222;
     touch-action: none;
 }
